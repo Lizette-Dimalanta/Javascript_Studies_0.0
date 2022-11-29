@@ -1,3 +1,5 @@
+# Javascript Studies
+
 ``` javascript
 let x = 'Apple, Banana, Kiwi'
 	// Find index (position)
@@ -34,23 +36,32 @@ let x = 'Apple, Banana, Kiwi'
         // Rounded version of pi:
         console.log(Math.PI.toFixed(4))
             // 3.1416
+```
 
-// INCREMENTS ---------------------------------------------------------------------------------------------------------
+## Increments
+
+```javascript
 let x = 5
     // Increment by 1 (x += 1)
         console.log(++x) 
     // Decement by 1 (x -= 1)
         console.log(--x)
+```
 
-// TYPE COERCION ------------------------------------------------------------------------------------------------------
+## Type Coercion
+
+```javascript
     console.log("123" == 123) // Equivalent but can hide errors
         // true
 
     // Prevent type coercion:
     console.log("123" === 123)
         // false
+```
 
-// DATA TYPE ----------------------------------------------------------------------------------------------------------
+## Data Type
+
+```javascript
 // Object (aka. in Python -> fusion of object and dictionary)
     // Allows dicts in curly brackets
 x = {}
@@ -69,7 +80,11 @@ x = {
     const field = 'age'
     console.log(x[field])
         // 22
+```
 
+## Array
+
+```javascript
 // ARRAY (aka. list in Python): --------------------------------------------------------------------------------------
 const x = [1, 2, 3, 3.14159, true, 'Hello'] // not limited to datatype
     console.log(x)
@@ -86,8 +101,11 @@ const x = [1, 2, 3, 3.14159, true, 'Hello'] // not limited to datatype
     // Go to end of array:
     console.log(x[x.length-1]) // OR console.log(x.includes(99))
         // Hello
+```
 
-// FUNCTIONS ---------------------------------------------------------------------------------------------------------
+## Functions
+
+```javascript
 Declare a function:
 function add(x, y) {                                    // Python:
     return x + y                                        // def add (x, y):
@@ -119,8 +137,11 @@ const Utils = {
     console.log(Utils.add(10, 43))
     console.log(Utils.doubler(numbers))
         // [ 24, 100, 88, 64, 4 ]
-        
-// STRUCTURE ---------------------------------------------------------------------------------------------------------
+```
+
+## Structures
+
+```javascript
 const people = ['Matt', 'Glen', 'Mary', 'Kate']
 
 // Destructure part of array
@@ -152,13 +173,18 @@ if (age >= 18) {                        // Python:
 } else {
     console.log('Child')
 }
+```
 
-// TERNARY OPERATOR (`?`) --------------------------------------------------------------------------------------------
+## Ternary Operator `?`
+
+```javascript
 // Python: allowed = 'Allowed' if age >= 18 else 'Not Allowed!'
 const allowed = age >= 18 ? 'Allowed' : 'Not Allowed'
+```
 
-// CASE STATEMENT / LOOPS --------------------------------------------------------------------------------------------
+## Switch Statement / Loops
 
+```javascript
 // Fallthrough:
 const fav_bird = 'Pigeon'
                                                                 
@@ -203,8 +229,11 @@ for (let food of favFoods) { // Python: for food in favFoods:
     // pizza
     // pasta
     // tacos
+```
 
-// Index and Value (enumerate) ----------------------------------------------------------------------------------------
+## Enumerate: Index and Value
+
+```javascript
 // Python: for index, food in enumerate(favFoods):
 for (let index in favFoods) {
     console.log(`${parseInt(index) + 1}. ${favFoods[index]}`)
@@ -215,9 +244,11 @@ for (let index in favFoods) {
 
 // SEMANTIC: .forEach (best practice) > for in/of:
 favFoods.forEach((food, index) => console.log(`${index + 1}. ${food}`))
+```
 
-// INTERATORS: Map and Filter ------------------------------------------------------------------------------------------
+## INTERATORS: Map and Filter
 
+```javascript
 // MAP: Itirates over array, calls function for each array -> New Array (map)
 
 const arr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9]
