@@ -34,7 +34,7 @@
 //         console.log(Math.PI.toFixed(4))
 //             // 3.1416
 
-// // INCREMENTS
+// // INCREMENTS ---------------------------------------------------------------------------------------------------------
 // let x = 5
 //     // Increment by 1 (x += 1)
 //         console.log(++x) 
@@ -49,7 +49,7 @@
 //     console.log("123" === 123)
 //         // false
 
-// // DATA TYPE
+// // DATA TYPE ---------------------------------------------------------------------------------------------------------
 // // Object (aka. in Python -> fusion of object and dictionary)
 //     // Allows dicts in curly brackets
 // x = {}
@@ -86,7 +86,7 @@
 //     console.log(x[x.length-1]) // OR console.log(x.includes(99))
 //         // Hello
 
-// FUNCTIONS
+// FUNCTIONS -----------------------------------------------------------------------------------------------------------
 // Declare a function:
 // function add(x, y) {                                    // Python:
 //     return x + y                                        // def add (x, y):
@@ -119,13 +119,24 @@
 //     console.log(Utils.doubler(numbers))
 //         // [ 24, 100, 88, 64, 4 ]
 
-// STRUCTURE
-const people = ['Matt', 'Glen', 'Mary', 'Kate']
+// STRUCTURE -----------------------------------------------------------------------------------------------------------
+// const people = ['Matt', 'Glen', 'Mary', 'Kate']
 
-// Destructure part of array
-const [, second, third] = people 
+// // Destructure part of array
+// const [, second, third, ...others] = people 
 
-console.log(second)
-    // Glen
-console.log(third)
-    // Mary
+// console.log(second)
+//     // Glen
+// console.log(third)
+//     // Mary
+// console.log(others)
+//     // [ 'Kate' ]   <- 'Matt' excluded due to placeholder (comma)
+
+// Combine arrays into a single array:
+// const bobBirds = ['Robin', 'Crow']
+// const sallyBirds = ['Bluejay', 'Cardinal']
+
+// const allBirds = [...bobBirds, ...sallyBirds, 'Pigeon'] // Split into individual elements -> Create new combined array
+
+// console.log(allBirds)
+//     // [ 'Robin', 'Crow', 'Bluejay', 'Cardinal', 'Pigeon' ]
