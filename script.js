@@ -140,3 +140,96 @@
 
 // console.log(allBirds)
 //     // [ 'Robin', 'Crow', 'Bluejay', 'Cardinal', 'Pigeon' ]
+
+// elif (Python) -> else if
+// const age = 16
+
+// if (age >= 18) {                        // Python:
+//     console.log('Adult')                // if age >= 18:
+// } else if (age >= 13) {                     // Python:
+//     console.log('Teen')
+// } else {
+//     console.log('Child')
+// }
+
+// TERNARY OPERATOR (`?`)
+// Python: allowed = 'Allowed' if age >= 18 else 'Not Allowed!'
+// const allowed = age >= 18 ? 'Allowed' : 'Not Allowed'
+
+// CASE STATEMENT
+
+// Fallthrough:
+// const fav_bird = 'Pigeon'
+                                                                
+// switch (fav_bird) {                                     // Python:
+//     case 'Raven': // no body, falls through             // match name:
+//     case 'Crow':                                            // case 'Lizette', 'Matthew':
+//         console.log('You like crows!')                          // pass
+//         break // `break` to stop fallthrough                // case 'John':
+//     case 'Robin':                                               // pass
+//         console.log('You like robins!')
+//         break
+//     default: // else (Python)
+//         console.log('I don\'t know that bird!')
+// }
+
+// `while` loop:
+// let count = 3
+
+// while (count > 0) {
+//     console.log(count--)
+// }
+    // 3
+    // 2
+    // 1
+
+// 3-Part `for` loop: / for i in range (Python):
+// for (let i = 0; i < 10; i += 2) { //('initialiser'; 'boolean'; 'after') i = iterations
+//     console.log(i)
+// }
+    // 0
+    // 2
+    // 4
+    // 6
+    // 8
+
+// for {} in range:
+const favFoods = ['pizza', 'pasta', 'tacos']
+
+// Python: for food in favFoods:
+for (let food of favFoods) { // use `in` over `of` for index
+    console.log(food)
+}
+    // pizza
+    // pasta
+    // tacos
+
+// Index and Value (enumerate)
+// Python: for index, food in enumerate(favFoods):
+for (let index in favFoods) {
+    console.log(`${parseInt(index) + 1}. ${favFoods[index]}`)
+}
+    // 1. pizza
+    // 2. pasta
+    // 3. tacos
+
+// SEMANTIC: .forEach (best practice) > for in/of:
+favFoods.forEach((food, index) => console.log(`${index + 1}. ${food}`))
+
+// INTERATORS: Map and Filter
+
+// MAP: Itirates over array, calls function for each array -> New Array (map)
+
+const arr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+const squared = arr.map((x) => x ** 2) // single parameter
+
+// FILTER: Itirates over array, calls function for each array -> Return a boolean -> if True, element is added into new array (with changes)
+const evens = arr.filter(x => x % 2 === 0)
+
+    console.log(squared) // returns new array
+        // [1,  4,  9, 16, 25,  36, 49, 64, 81]
+        
+    console.log(arr) // original array
+        // [1, 2, 3, 4, 5,  6, 7, 8, 9]
+
